@@ -1,0 +1,70 @@
+<!-- <app-header></app-header> -->
+<div class="container">
+<div class="thumb">
+	  <a href="#">
+		    <span>PRODUCT LIST</span>
+	  </a>
+</div>
+
+
+<!-- <p id="td">Sản phẩm mới nhất</p> -->
+<h3 style="text-align:center; margin-top: 0px;"> PRODUCTS LIST</h3>
+<!-- <h3 style="text-align:center; margin-top: 0px; color : gray;">_____________*______________</h3> -->
+<div id="c1" class="row">
+
+	<div ngClass="col-lg-4 col-md-9 mb-9" *ngFor="let product of products">
+		<div  id="anh" class="card h-100">
+			<a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+				<div class="card-body">
+					<h4 class="card-title">
+						<a id="a" style="color:#555555; font-size: 20px; " href="#">{{product.name}}&nbsp; <span id="sp1" class="badge badge-primary badge-pill">new</span></a>
+					</h4><br>
+					<h5 style="color:red;">{{product.price}} vnđ
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="badge badge-primary badge-pill">-5%</span>
+          </h5>
+          
+					<!-- <p class="card-text">{{product.desc}}</p>
+					<p id="p1"class="card-text">{{product.status ? 'In stock': 'Out stock'}}</p> -->
+				</div>
+				<div class="card-footer">
+
+					<button id="b1" class="btn btn-primary" routerLink = '/product/{{product.id}}'>Detail</button>
+					<!-- <button class="btn btn-primary" (click)="showDetail(product)">Chi tiết</button> -->					
+					<button id="b2" class="btn btn-primary" routerLink = '/product/edit/{{product.id}}'>Edit</button>
+          <button id="b3" class="btn btn-primary" (click)="removeItem(product.id)">Delete</button>
+
+					<!-- <input type="text" name="" id="" [(ngModel)]="product.name" class="form-control mt-3"> -->
+      </div>
+				</div>
+		</div>
+
+	</div>
+  	<nav class="blog-pagination justify-content-center d-flex">
+		<ul class="pagination">
+			<li class="page-item">
+				<a href="#" class="page-link" aria-label="Previous">
+					<span aria-hidden="true">
+                                      <span class="fas fa-chevron-left"></span>
+					</span>
+				</a>
+			</li>
+      <li class="page-item active"><a href="#" class="page-link">01</a></li>
+			<li class="page-item"><a href="#" class="page-link">02</a></li>
+			
+			<li class="page-item"><a href="#" class="page-link">03</a></li>
+			<li class="page-item"><a href="#" class="page-link">04</a></li>
+			<li class="page-item"><a href="#" class="page-link">09</a></li>
+			<li class="page-item">
+				<a href="#" class="page-link" aria-label="Next">
+					<span aria-hidden="true">
+                                      <span class="fas fa-chevron-right"></span>
+					</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+  <hr>
+
+	<!-- <div *ngIf="selected">
+  <app-product-detail [data]="selected"></app-product-detail>
+</div> -->

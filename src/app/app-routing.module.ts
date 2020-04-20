@@ -7,6 +7,7 @@ import { WomenComponent } from './women/women.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { BashboardComponent } from './bashboard/bashboard.component';
+import { ProductListComponent } from "./product-list/product-list.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -15,11 +16,17 @@ const routes: Routes = [
     {path:'men',component:MenComponent},
      {path:'women',component:WomenComponent},
     {path:'contact',component:ContactComponent},
-    {path:'admin',component:AdminComponent},
+    {path:'admin',component:AdminComponent,
+    children:[
       {path:'bashboard',component:BashboardComponent},
+      { path: '', redirectTo: 'bashboard', pathMatch: 'full'},
+       { path: 'bashboard', component: BashboardComponent},
+          { path: 'product-list', component: ProductListComponent},
       
-     
     ]
+    },
+];
+    
     
 
 @NgModule({
