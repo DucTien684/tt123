@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { BashboardComponent } from './bashboard/bashboard.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ProductAddComponent } from './product-add/product-add.component';
 
 
 
@@ -29,6 +30,7 @@ import { ProductListComponent } from './product-list/product-list.component';
       AdminComponent,
       BashboardComponent,
       ProductListComponent,
+      ProductAddComponent,
       
  
       
