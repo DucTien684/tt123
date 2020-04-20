@@ -9,6 +9,7 @@ import { AdminComponent } from './admin/admin.component';
 import { BashboardComponent } from './bashboard/bashboard.component';
 import { ProductListComponent } from "./product-list/product-list.component";
 import { ProductAddComponent } from "./product-add/product-add.component";
+import { ProductManagerComponent } from "./product-manager/product-manager.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -24,6 +25,7 @@ const routes: Routes = [
        { path: 'bashboard', component: BashboardComponent},
         { path: 'product-add', component: ProductAddComponent},
           { path: 'product-list', component: ProductListComponent},
+           { path: "manager", component: ProductManagerComponent},
       
     ]
     },

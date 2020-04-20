@@ -213,7 +213,7 @@
 			  </a> </div>		  
 		    <div class="menu">
 		      <ul id="menu" >
-		        <li id="menu-home" ><a href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+		        <li id="menu-home" ><a href="index.html"><i class="fas fa-tachometer-alt"></i><a routerLink="/admin/dashboard" ></a><span>Dashboard</span></a></li>
 		      
 		        
 		      
@@ -223,7 +223,13 @@
 		            <li id="menu-academico-avaliacoes" ><a href="signup.html">Sign Up</a></li>		           
 		          </ul>
 		        </li>
-		        
+		        <li><a routerLink = "/admin/manager" href="#"><i class="fa fa-cog"></i><span>Product Manager</span><span class="fa fa-angle-right" style="float: right"></span></a>
+		         	 <ul id="menu-academico-sub" >
+			            <li id="menu-academico-avaliacoes" ><a routerLink="/admin/product-add" >add product</a></li>
+			            <li id="menu-academico-boletim" ><a routerLink="/admin/product-list" href="# ">product list</a></li>
+                  <li id="menu-academico-boletim" ><a routerLink="/admin/manager" href="# ">Manager</a></li>
+		             </ul>
+		         </li>
 		        
 		       
 		         <li><a href="#"><i class="fa fa-cog"></i><span>System</span><span class="fa fa-angle-right" style="float: right"></span></a>

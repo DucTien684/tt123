@@ -14,6 +14,7 @@ import { AdminComponent } from './admin/admin.component';
 import { BashboardComponent } from './bashboard/bashboard.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { ProductManagerComponent } from './product-manager/product-manager.component';
 
 
 
@@ -31,6 +32,7 @@ import { ProductAddComponent } from './product-add/product-add.component';
       BashboardComponent,
       ProductListComponent,
       ProductAddComponent,
+      ProductManagerComponent,
       
  
       
