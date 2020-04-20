@@ -6,7 +6,7 @@ import { MenComponent } from './men/men.component';
 import { WomenComponent } from './women/women.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
-
+import { BashboardComponent } from './bashboard/bashboard.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -18,6 +18,7 @@ const routes: Routes = [
     {path:'admin',component:AdminComponent,
     children: [
       { path: "", redirectTo: "/dashboard", pathMatch: "full" },
+      {path:'bashboard',component:BashboardComponent},
       
      
     ]
