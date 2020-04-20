@@ -15,15 +15,12 @@ const routes: Routes = [
     {path:'men',component:MenComponent},
      {path:'women',component:WomenComponent},
     {path:'contact',component:ContactComponent},
-    {path:'admin',component:AdminComponent,
-    children: [
-      { path: "", redirectTo: "/dashboard", pathMatch: "full" },
+    {path:'admin',component:AdminComponent},
       {path:'bashboard',component:BashboardComponent},
       
      
     ]
-    }
-];
+    
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
